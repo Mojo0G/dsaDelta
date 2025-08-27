@@ -1,7 +1,7 @@
 {
   "metadata": {
     "totalProblems": 3,
-    "lastUpdated": "2025-08-27T10:08:44.283Z",
+    "lastUpdated": "2025-08-27T10:10:01.907Z",
     "breakdown": {
       "Codechef": {
         "total": 0,
@@ -38,13 +38,13 @@
       "language": "java",
       "files": {
         "code": "class Solution {\n    int missingNum(int arr[]) {\n        int n = arr.length + 1;\n    int xor = 0;\n    // XOR all numbers from 1 to n\n    for (int i = 1; i <= n; i++) {\n        xor ^= i;\n    }\n    // XOR all elements in array\n    for (int num : arr) {\n        xor ^= num;\n    }\n    return xor;\n    }\n}",
-        "readme": "Arrays,Searching,Bit_Magic,Data_Structures,Algorithms\nNMissing in Array\nDifficulty: EasyAccuracy: 29.59%Submissions: 1.5MPoints: 2Average Time: 15m\n\nYou are given an array arr[] of size n - 1 that contains distinct integers in the range from 1 to n (inclusive). This array represents a permutation of the integers from 1 to n with one element missing. Your task is to identify and return the missing element.\n\nExamples:\n\nInput: arr[] = [1, 2, 3, 5]\nOutput: 4\nExplanation: All the numbers from 1 to 5 are present except 4.\n\nInput: arr[] = [8, 2, 4, 5, 3, 7, 1]\nOutput: 6\nExplanation: All the numbers from 1 to 8 are present except 6.\nInput: arr[] = [1]\nOutput: 2\nExplanation: Only 1 is present so the missing element is 2.\n\n\nConstraints:\n1 ≤ arr.size() ≤ 106\n1 ≤ arr[i] ≤ arr.size() + 1\n\nTry more examples\nExpected Complexities\nCompany Tags\nTopic Tags\nRelated Interview Experiences\nRelated Articles",
-        "notes": "Missing in Array\n\n          - Summary: The code utilizes an array to store input numbers. It employs the bitwise XOR operation to find the missing number. First, it XORs all numbers from 1 to n (n being the expected array size including the missing number). Then, it XORs all numbers present in the input array with the initial XOR result. The final XOR value represents the missing number because XORing a number with itself results in 0, canceling out existing numbers, leaving only the missing number.\n\n          - Time Complexity: O(n) because the code iterates through the input array once and then iterates from 1 to n, where n is the size of the array. Both operations have linear time complexity.\n          - Space Complexity: O(1) because the algorithm uses a constant amount of extra space to store variables like 'n' and 'xor', regardless of the input array's size."
+        "readme": "Arrays,Searching,Bit_Magic,Data_Structures,Algorithms\tMissing in Array\nDifficulty: EasyAccuracy: 29.59%Submissions: 1.5MPoints: 2Average Time: 15m\n\nYou are given an array arr[] of size n - 1 that contains distinct integers in the range from 1 to n (inclusive). This array represents a permutation of the integers from 1 to n with one element missing. Your task is to identify and return the missing element.\n\nExamples:\n\nInput: arr[] = [1, 2, 3, 5]\nOutput: 4\nExplanation: All the numbers from 1 to 5 are present except 4.\n\nInput: arr[] = [8, 2, 4, 5, 3, 7, 1]\nOutput: 6\nExplanation: All the numbers from 1 to 8 are present except 6.\nInput: arr[] = [1]\nOutput: 2\nExplanation: Only 1 is present so the missing element is 2.\n\n\nConstraints:\n1 ≤ arr.size() ≤ 106\n1 ≤ arr[i] ≤ arr.size() + 1\n\nTry more examples\nExpected Complexities\nCompany Tags\nTopic Tags\nRelated Interview Experiences\nRelated Articles",
+        "notes": "Missing in Array\n\n          - Summary: The code utilizes an array to store input numbers. It leverages the XOR bitwise operation to find the missing number. First, it XORs all numbers from 1 to n (n being the array length +1, representing the expected upper bound of the sequence), effectively calculating the XOR sum of the complete sequence. Then, it XORs this sum with the XOR sum of all numbers present in the input array. The final XOR result reveals the missing number because XORing a number with itself results in 0, canceling out the present numbers and leaving only the missing number.\n\n          - Time Complexity: O(n), because the code iterates through the input array once and through the range 1 to n once, where n is the length of the array plus 1. Both iterations are linear in terms of input size.\n          - Space Complexity: O(1), as the algorithm uses only a constant amount of extra space to store variables such as 'n' and 'xor'.  The space used does not scale with the input array size."
       },
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T10:08:44.146Z"
+      "lastUpdated": "2025-08-27T10:10:01.776Z"
     },
     {
       "id": "hackerrank-medium-simple-array-sum",
@@ -60,7 +60,7 @@
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T10:08:44.151Z"
+      "lastUpdated": "2025-08-27T10:10:01.782Z"
     },
     {
       "id": "leetcode-easy-two-sum",
@@ -76,7 +76,7 @@
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T10:08:44.149Z"
+      "lastUpdated": "2025-08-27T10:10:01.779Z"
     }
   ]
 }
