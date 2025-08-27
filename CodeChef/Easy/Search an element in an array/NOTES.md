@@ -1,8 +1,8 @@
 
           Search an element in an array
 
-          - Summary: The Java code uses a Scanner to read input from the console.  It takes an integer 'n' representing the array size and an integer 'x' to search for. It then iterates through 'n' integers read from input, checking if each integer is equal to 'x'. A boolean variable tracks whether 'x' is found. Finally, it prints "YES" if 'x' is found and "NO" otherwise. No explicit data structures beyond the input integers and a boolean variable are used.
+          - Summary: The code uses a Scanner to read input from the console. It reads an integer 'n' representing the array size, then an integer 'x' to search for. It iterates 'n' times, reading each array element and checking if it equals 'x'. A boolean variable 'isfound' tracks if 'x' is found. Finally, it prints "YES" if 'x' is found, otherwise "NO". No explicit data structures like arrays or HashMaps are used; the input is processed sequentially.
 
-          - Time Complexity: O(n), where n is the number of elements in the input array. This is because the code iterates through the array once in the worst case.
-          - Space Complexity: O(1). The space used by the program is constant, regardless of the input size.  The variables n, x, isfound, and ce occupy a fixed amount of memory.
+          - Time Complexity: O(n) because the code iterates through the input array once, where 'n' is the number of elements in the array.
+          - Space Complexity: O(1) because the code uses a constant amount of extra space regardless of the input size. The variables 'n', 'x', 'isfound', and 'ce' occupy a fixed amount of memory.
           
