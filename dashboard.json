@@ -1,7 +1,7 @@
 {
   "metadata": {
     "totalProblems": 4,
-    "lastUpdated": "2025-08-27T10:26:10.373Z",
+    "lastUpdated": "2025-08-27T10:31:47.227Z",
     "breakdown": {
       "Codechef": {
         "total": 1,
@@ -39,12 +39,12 @@
       "files": {
         "code": "import java.util.*;\nimport java.lang.*;\nimport java.io.*;\n\nclass Codechef\n{\n\tpublic static void main (String[] args) throws java.lang.Exception\n\t{\n\t\t// your code goes here\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        int x = sc.nextInt();\n        \n        boolean isfound = false;\n        \n        for (int i = 0;i < n ;i++ ){\n            int ce = sc.nextInt();\n            if(ce == x){\n                isfound = true;\n            }\n        }\n        \n        if (isfound){\n            System.out.println(\"YES\");\n        }\n        else{\n            System.out.println(\"NO\");\n        }\n        \n        sc.close();\n\t}\n}",
         "readme": "Search an element in an array\n\nYou are given an array \n𝐴\nA of size \n𝑁\nN and an element \n𝑋\nX. Your task is to find whether the array \n𝐴\nA contains the element \n𝑋\nX or not.\n\nInput Format\nThe first line contains two space-separated integers \n𝑁\nN and \n𝑋\nX — the size of array and the element to be searched.\nThe second line contains all the elements of array \n𝐴\nA\nOutput Format\n\nOutput \"YES\" if the element \n𝑋\nX is present in \n𝐴\nA, otherwise output \"NO\".\n\nConstraints\n1\n≤\n𝑁\n≤\n10\n5\n1≤N≤10\n5\n1\n≤\n𝐴\n𝑖\n≤\n10\n5\n1≤A\ni\n\t​\n\n≤10\n5\nSample 1:\nInput\nOutput\n5 3\n7 3 5 2 1\nYES\nSample 2:\nInput\nOutput\n5 10\n7 3 5 2 1\nNO",
-        "notes": "Search an element in an array\n\n          - Summary: The Java code uses a Scanner to read input from the console.  It takes an integer 'n' representing the array size and an integer 'x' to search for. It then iterates through 'n' integers read from input, checking if each integer is equal to 'x'. A boolean variable tracks whether 'x' is found. Finally, it prints \"YES\" if 'x' is found and \"NO\" otherwise. No explicit data structures beyond the input integers and a boolean variable are used.\n\n          - Time Complexity: O(n), where n is the number of elements in the input array. This is because the code iterates through the array once in the worst case.\n          - Space Complexity: O(1). The space used by the program is constant, regardless of the input size.  The variables n, x, isfound, and ce occupy a fixed amount of memory."
+        "notes": "Search an element in an array\n\n          - Summary: The code uses a Scanner to read input from the console. It reads an integer 'n' representing the array size, then an integer 'x' to search for. It iterates 'n' times, reading each array element and checking if it equals 'x'. A boolean variable 'isfound' tracks if 'x' is found. Finally, it prints \"YES\" if 'x' is found, otherwise \"NO\". No explicit data structures like arrays or HashMaps are used; the input is processed sequentially.\n\n          - Time Complexity: O(n) because the code iterates through the input array once, where 'n' is the number of elements in the array.\n          - Space Complexity: O(1) because the code uses a constant amount of extra space regardless of the input size. The variables 'n', 'x', 'isfound', and 'ce' occupy a fixed amount of memory."
       },
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T10:26:10.231Z"
+      "lastUpdated": "2025-08-27T10:31:47.062Z"
     },
     {
       "id": "gfg-easy-missing-in-array",
@@ -60,7 +60,7 @@
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T10:26:10.233Z"
+      "lastUpdated": "2025-08-27T10:31:47.065Z"
     },
     {
       "id": "hackerrank-medium-simple-array-sum",
@@ -76,7 +76,7 @@
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T10:26:10.240Z"
+      "lastUpdated": "2025-08-27T10:31:47.071Z"
     },
     {
       "id": "leetcode-easy-two-sum",
@@ -92,7 +92,7 @@
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T10:26:10.236Z"
+      "lastUpdated": "2025-08-27T10:31:47.067Z"
     }
   ]
 }
