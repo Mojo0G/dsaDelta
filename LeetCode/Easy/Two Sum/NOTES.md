@@ -1,8 +1,8 @@
 
           Two Sum
 
-          - Summary: This algorithm utilizes a hash map (dictionary in Python) to efficiently find two numbers within a list that add up to a specified target.  It iterates through the input list, checking for the complement (target - current number) in the hash map. If found, it immediately returns the indices of the two numbers. Otherwise, it adds the current number and its index to the hash map and continues. If no solution is found after iterating through the entire list, an empty list is returned.
+          - Summary: The algorithm uses a hash map (dictionary in Python) to store numbers and their indices. It iterates through the input array `nums`. For each number, it calculates the complement needed to reach the `target`. If the complement is found in the hash map, it means a pair adding up to the target has been found, and their indices are returned. Otherwise, the current number and its index are added to the hash map, and the iteration continues. If no solution is found after iterating through all numbers, an empty list is returned.
 
-          - Time Complexity: O(n) because the algorithm iterates through the input list once.  The hash map lookups have an average time complexity of O(1).
-          - Space Complexity: O(n) because in the worst-case scenario, the hash map will store all the numbers from the input list, resulting in space proportional to the size of the input list.
+          - Time Complexity: O(n) because the algorithm iterates through the input array once.  Hash map lookups have an average time complexity of O(1).
+          - Space Complexity: O(n) because in the worst-case scenario, the hash map will store all numbers from the input array, resulting in space proportional to the input size.
           
