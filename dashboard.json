@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "totalProblems": 2,
-    "lastUpdated": "2025-08-27T09:56:30.039Z",
+    "totalProblems": 3,
+    "lastUpdated": "2025-08-27T10:07:25.231Z",
     "breakdown": {
       "Codechef": {
         "total": 0,
@@ -10,8 +10,8 @@
         "Hard": 0
       },
       "Gfg": {
-        "total": 0,
-        "Easy": 0,
+        "total": 1,
+        "Easy": 1,
         "Medium": 0,
         "Hard": 0
       },
@@ -31,6 +31,22 @@
   },
   "problems": [
     {
+      "id": "gfg-easy-missing-in-array",
+      "platform": "Gfg",
+      "difficulty": "Easy",
+      "problemName": "Missing in Array",
+      "language": "java",
+      "files": {
+        "code": "class Solution {\n    int missingNum(int arr[]) {\n        int n = arr.length + 1;\n    int xor = 0;\n    // XOR all numbers from 1 to n\n    for (int i = 1; i <= n; i++) {\n        xor ^= i;\n    }\n    // XOR all elements in array\n    for (int num : arr) {\n        xor ^= num;\n    }\n    return xor;\n    }\n}",
+        "readme": "Arrays,Searching,Bit_Magic,Data_Structures,Algorithms\nMissing in Array\nDifficulty: EasyAccuracy: 29.59%Submissions: 1.5MPoints: 2Average Time: 15m\n\nYou are given an array arr[] of size n - 1 that contains distinct integers in the range from 1 to n (inclusive). This array represents a permutation of the integers from 1 to n with one element missing. Your task is to identify and return the missing element.\n\nExamples:\n\nInput: arr[] = [1, 2, 3, 5]\nOutput: 4\nExplanation: All the numbers from 1 to 5 are present except 4.\n\nInput: arr[] = [8, 2, 4, 5, 3, 7, 1]\nOutput: 6\nExplanation: All the numbers from 1 to 8 are present except 6.\nInput: arr[] = [1]\nOutput: 2\nExplanation: Only 1 is present so the missing element is 2.\n\n\nConstraints:\n1 ≤ arr.size() ≤ 106\n1 ≤ arr[i] ≤ arr.size() + 1\n\nTry more examples\nExpected Complexities\nCompany Tags\nTopic Tags\nRelated Interview Experiences\nRelated Articles",
+        "notes": "Missing in Array\n\n          - Summary: The code utilizes an array to store input numbers. It employs the bitwise XOR operation to find the missing number. First, it XORs all numbers from 1 to n (n being the expected array size including the missing number). Then, it XORs all elements present in the input array with the previously calculated XOR value. The final XOR result represents the missing number because XORing a number with itself results in 0, thus canceling out the present numbers and leaving only the missing one.\n\n          - Time Complexity: O(n) because both loops iterate through the array (or numbers from 1 to n) once, where n is the length of the input array.\n          - Space Complexity: O(1) because the algorithm uses a constant amount of extra space to store variables like 'n' and 'xor', regardless of the input array size."
+      },
+      "hasCode": true,
+      "hasReadme": true,
+      "hasNotes": true,
+      "lastUpdated": "2025-08-27T10:07:25.215Z"
+    },
+    {
       "id": "hackerrank-medium-simple-array-sum",
       "platform": "Hackerrank",
       "difficulty": "Medium",
@@ -44,7 +60,7 @@
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T09:56:29.353Z"
+      "lastUpdated": "2025-08-27T10:07:25.220Z"
     },
     {
       "id": "leetcode-easy-two-sum",
@@ -60,7 +76,7 @@
       "hasCode": true,
       "hasReadme": true,
       "hasNotes": true,
-      "lastUpdated": "2025-08-27T09:56:29.350Z"
+      "lastUpdated": "2025-08-27T10:07:25.217Z"
     }
   ]
 }
